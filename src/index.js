@@ -11,8 +11,6 @@ dotenv.config({
 
 // second approach
 
-
-
 connectDB()
 .then(()=>{
     app.listen(process.env.PORT || 8000, ()=>{
@@ -21,23 +19,8 @@ connectDB()
     })
 })
 .catch((err)=>{
-    console.log("mongo db connectio failed !! ",err)
+    console.log("mongo db connection failed !! ",err)
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
